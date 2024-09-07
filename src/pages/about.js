@@ -17,18 +17,18 @@ const About = () => {
 
         <main className="flex w-full flex-col items-center justify-center">
             <Layout className='pt-16'>
-                <AnimatedText text="Hello, I'm Shahed" className='mb-16'/>
+                <AnimatedText text="Hello, I&apos;m Shahed" className='mb-16'/>
                 <div className='grid w-full grid-cols-8 gap-16'>
                     <div className='col-span-3 flex flex-col items-start justify-center'>
-                        <p>I'm a third-year Software Engineering student at the University of Calgary with
-                         a minor in Mechatronics. I’m deeply passionate about artificial intelligence and 
+                        <p>I&apos;m a third-year Software Engineering student at the University of Calgary with
+                         a minor in Mechatronics. I&apos;m deeply passionate about artificial intelligence and 
                          large language models, having worked on various projects utilizing AI to 
                          push the boundaries of the software world. I enjoy working on solutions that merge 
-                         my technical skills with creativity, whether it's developing complex applications 
+                         my technical skills with creativity, whether it&apos;s developing complex applications 
                          or exploring how software can enhance mechanical systems. </p>
 
-                        <p className=' my-4'>Throughout my academic journey, I’ve delved into web development, robotics, and the 
-                        exciting overlap between software and mechanical engineering. While pursuing my degree, 
+                        <p className=' my-4'>Throughout my academic journey, I&apos;ve delved into web development, robotics, and the 
+                        overlap between software and mechanical engineering. While pursuing my degree, 
                         I had the opportunity to be involved in a variety of clubs and initiatives that gave me 
                         hands-on experience in game development, VR/VX, GUI and website development, and research. 
                         These experiences have broadened my perspective and further fueled my enthusiasm for 
@@ -43,7 +43,7 @@ const About = () => {
 
                     <div className='col-span-2 flex flex-col items-end justify-center'>
                         <p>My enthusiasm for learning drives me to stay updated with the latest advancements and 
-                        actively pursue innovative projects that push the boundaries of what’s possible. I’m 
+                        actively pursue innovative projects that push the boundaries of what&apos;s possible. I&apos;m 
                         always eager to embrace new challenges and continuously seek opportunities to bridge the 
                         gap between cutting-edge technology and real-world applications!</p>
                     </div>
