@@ -103,7 +103,12 @@ const projects = () => {
                         </div>
 
                         <div className='col-span-12'>
-                            Project 4
+                        <FeaturedProject 
+                                type="Project 4" 
+                                title="Planner App" 
+                                summary="description"
+                                img={project1}
+                                github="https://github.com/arnavmittal14/ENSF380SummerFinalProject" />
                         </div>
 
                     </div>
