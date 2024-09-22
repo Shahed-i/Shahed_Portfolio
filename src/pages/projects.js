@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { GithubIcon } from '../components/Icons';
 import trainPanel from "../../public/images/projects/trainPanel.PNG";
 import planify from "../../public/images/projects/planify.jpg";
+import SUAV from "../../public/images/projects/SUAV.jpg";
 
 
 const FeaturedProject = ({type, title, summary, img, github}) => {
@@ -88,20 +89,20 @@ const projects = () => {
 
                     <div className='grid grid-cols-12 gap-24'>
 
-                    <div className='col-span-12'>
-                        <FeaturedProject2 
-                            type="Project 1" 
-                            title="Planner App" 
-                            summary="A comprehensive task management application designed to streamline productivity 
-                            and organization. It features a built-in calendar for adding tasks and deadlines, as well
-                             as a focus mode that utilizes the Pomodoro study method to enhance concentration. Users 
-                             can also organize their tasks by category and quickly jot down notes in a dedicated 
-                             section, making it a versatile tool for managing both academic and personal projects."
-                            img={planify}
-                            github="https://github.com/Shahed-i/plannerapp" 
-                                link="https://planify-web.netlify.app/"
-                            />
-                    </div>
+                        <div className='col-span-12'>
+                            <FeaturedProject2 
+                                type="Project 1" 
+                                title="Planner App" 
+                                summary="A comprehensive task management application designed to streamline productivity 
+                                and organization. It features a built-in calendar for adding tasks and deadlines, as well
+                                as a focus mode that utilizes the Pomodoro study method to enhance concentration. Users 
+                                can also organize their tasks by category and quickly jot down notes in a dedicated 
+                                section, making it a versatile tool for managing both academic and personal projects."
+                                img={planify}
+                                github="https://github.com/Shahed-i/plannerapp" 
+                                    link="https://planify-web.netlify.app/"
+                                />
+                        </div>
 
                         <div className='col-span-12'>
                             <FeaturedProject 
@@ -115,9 +116,26 @@ const projects = () => {
                                 github="https://github.com/arnavmittal14/ENSF380SummerFinalProject" />
                         </div>
 
+                        <div className='col-span-12'>
+                            <FeaturedProject2 
+                                type="Project 3" 
+                                title="SUAV Website" 
+                                summary="The Schulich UAV website provides an overview of the Schulich School of 
+                                Engineering&apos;s unmanned aerial vehicle (UAV) team and their projects. It features 
+                                sections on the team&apos;s mission, the technology behind their drones, and the competitions 
+                                they participate in. The site highlights current team members, sponsors, and project 
+                                updates, offering visitors insight into the team&apos;s accomplishments and goals. With a 
+                                modern design and easy navigation, the website showcases the innovative work being done 
+                                in the field of UAVs at Schulich."
+                                img={SUAV}
+                                github="https://github.com/SchulichUAV/SUAVWebsite" 
+                                link="https://schulichuav.ca/"
+                                />
+                        </div>
+
                         <div className='col-span-6'>
                         <Project 
-                                type="Project 3" 
+                                type="Project 4" 
                                 title="Disaster Relief System" 
                                 summary="A robust Java application designed to efficiently manage and organize 
                                 disaster victim data, enabling streamlined tracking of personal information, medical
@@ -129,7 +147,7 @@ const projects = () => {
                         
                         <div className='col-span-6'>
                         <Project 
-                                type="Project 4" 
+                                type="Project 5" 
                                 title="Museum Management System" 
                                 summary="This project involves designing and developing a database management system
                                  for a museum to organize and manage its collection of art objects and exhibitions. 
