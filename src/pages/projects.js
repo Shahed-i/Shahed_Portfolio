@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Link from 'next/link';
 import Image from 'next/image';
 import { GithubIcon } from '../components/Icons';
-import trainPanel from "../../public/images/projects/trainPanel.png";
+import trainPanel from "../../public/images/projects/trainPanel.PNG";
 import planify from "../../public/images/projects/planify.jpg";
 
 
