@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import profilePic from "../../public/images/profile/index-transformed.png"
+import profilePic from "../../public/images/profile/shahed.JPG"
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
@@ -18,29 +18,58 @@ export default function Home() {
       </Head>
       <main className='flex items-center text-dark w-full min-h-screen'>
         <Layout className='pt-0'>
-          <div className='flex items-center justify-between w-full'>
-            <div className='w-1/2'>
-              <Image src={profilePic} alt="Shahed Issa" className='w-full h-auto' />
-            </div>
-            <div className='w-1/2 flex flex-col item-center self-center'>
-              <AnimatedText text="Hi, I'm Shahed!" className='!text-5xl !text-left' />
-              <p className='my-4 text-base font-medium'>I'm a software engineering and mechatronics student with a passion for coding and problem-solving. I enjoy creating innovative solutions and continuously learning new technologies to bring ideas to life.</p>
-              <div className='flex items-center self-start mt-2'>
-                <Link href="Resume_2024.pdf" target={'_blank'} 
-                className='flex items-center bg-dark text-light p-2.5 px-6 
-                rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 
-                border-2 border-solid border-transparent hover:border-dark'
-                >Resume <LinkArrow className={"w-6 ml-1"}/></Link>
-                <Link href="mailto:shahedissa9@gmail.com" target={'_blank'} 
-                className='ml-4 text-lg font-medium capitalize text-dark underline'>Contact </Link>
-              </div>
-            </div>
-          </div>
+        <AnimatedText text="Hello, I&apos;m Shahed" className='mb-16'/>
+                <div className='grid w-full grid-cols-8 gap-16'>
+                <div className='col-span-3 flex flex-col items-start justify-center'>
+                    <p>
+                        I&apos;m a third-year Software Engineering student at the University 
+                        of Calgary with a minor in Mechatronics. I&apos;m passionate about artificial intelligence and large language models, 
+                        having worked on various projects utilizing AI to push the boundaries of the software world. 
+                        I enjoy working on solutions that merge my technical skills with my creativity, whether it&apos;s 
+                        developing complex applications or exploring how software can enhance 
+                        mechanical systems.
+                    </p>
+
+                    <p className='my-4'>
+                        In the past few years, I had the opportunity to be involved in a variety of clubs and initiatives 
+                        that gave me hands-on experience in:
+                    </p>
+                    <ul className='list-disc ml-10'>
+                        <li>Game development</li>
+                        <li>VR/AR</li>
+                        <li>GUI and website development</li>
+                        <li>Research</li>
+                        <li>Robotics</li>
+                        <br />
+                    </ul>
+                    <p>
+                        These experiences have broadened my perspective and further fueled my enthusiasm for working in the 
+                        software field.
+                    </p>
+                </div>
+
+
+                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
+                    bg-light p-8'>
+                    <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+                        <Image src={profilePic} alt="Shahed Issa" className='w-full h-auto rounded-2xl' />
+                    </div>
+
+                    <div className='col-span-2 flex flex-col items-end justify-center'>
+                        <p>
+                            My enthusiasm for learning drives me to stay updated with the latest advancements and 
+                            actively pursue innovative projects that push the boundaries of what&apos;s
+                             possible. I&apos;m always eager to embrace new challenges and continuously 
+                             seek opportunities to bridge the gap between cutting-edge technology and 
+                             real-world applications!
+                        </p>
+                    </div>
+
+                </div>
         </Layout>
 
         <HireMe /> 
         <div className='absolute right-8 bottom-8 inline-block w-24'>
-          <Image src={lightBulb} alt="Photo" className='w-full h-auto' />
         </div>
       </main>
     </>

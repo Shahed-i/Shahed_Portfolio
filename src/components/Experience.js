@@ -34,7 +34,7 @@ const Experience = () => {
     );
 
     return (
-        <div className='my-64'>
+        <div className='my-20'>
             <h2 className='font-bold text-8xl mb-32 w-full text-center'>Experience</h2>
 
             <div ref={ref} className='w-[75%] mx-auto relative'>
@@ -43,6 +43,18 @@ const Experience = () => {
             className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'/>
 
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
+                <Details 
+                        position="Web Chair"
+                        company="International Workshop on Bots in Software Engineering (BotSE)"
+                        companyLink="https://botse.github.io/"
+                        time="September 2024 - Current"
+                        address="Calgary, AB"
+                        work="Managed and maintained the organization&apos;s website, ensuring it was up-to-date, 
+                        user-friendly, and aligned with BotSE&apos;s objectives. I deployed the website and led both 
+                        front-end and back-end development, optimizing functionality and performance. Collaborating 
+                        with the team, I implemented new features and provided technical support for web-related tasks, 
+                        contributing to the organization&apos;s overall digital strategy."
+                    />
                     <Details 
                         position="Undergraduate Student Researcher"
                         company="Schulich School of Engineering"
@@ -65,7 +77,7 @@ const Experience = () => {
                         control system (GCS) that manages flight operations and displays real-time drone metrics. 
                         Ensured the page was readable and optimized for both performance and functionality, keeping 
                         a structured and responsive layout. Coordinated the integration of RocketM5 and 5.8G antennas,
-                         enabling reliable long-distance communication between the drone’s Raspberry Pi and the GCS."
+                         enabling reliable long-distance communication between the drone&apos;s Raspberry Pi and the GCS."
                     />
                     <Details 
                         position="Full Stack Web Developer"

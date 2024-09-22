@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Logo from './Logo';
 import React from 'react';
 import {useRouter} from 'next/router';
-import { GithubIcon, LinkedInIcon } from './Icons';
+import { GithubIcon, LinkedInIcon, EmailIcon } from './Icons';
 import {motion} from 'framer-motion';
 
 const CustomLink = ({href, title, className=""}) => {  
@@ -29,11 +29,13 @@ const NavBar = () => {
         <CustomLink href="/" title="Home" className='mr-4'/>
         <CustomLink href="/about" title="About" className='mx-4'/>
         <CustomLink href="/projects" title="Projects" className='mx-4'/>
+        <CustomLink href="Shahed_Issa_Resume.pdf" title="Resume" className='mx-4' target="_blank" />
     </nav>
 
     <nav className='flex items-center justify-center flex-wrap'>
         <motion.a href="https://github.com/Shahed-i" target={"_blank"} whileHover={{y:-5}} whileTap={{scale:0.9}} className='w-9 mr-5'><GithubIcon /></motion.a>
         <motion.a href="https://www.linkedin.com/in/shahed-issa/" target={"_blank"} whileHover={{y:-5}} whileTap={{scale:0.9}} className='w-9 ml-5'><LinkedInIcon /></motion.a>
+        <motion.a href="mailto:shahedissa9@gmail.com" target={"_blank"} whileHover={{y:-5}} whileTap={{scale:0.9}} className='w-9 mr-5 ml-10'><EmailIcon /></motion.a>
     </nav>
 
     <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
